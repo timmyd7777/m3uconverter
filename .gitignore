@@ -1,3 +1,7 @@
+# Mac Finder droppings
+.DS_Store
+.Trashes
+
 # Prerequisites
 *.d
 
@@ -26,7 +30,9 @@
 *.a
 *.lib
 
-# Executables
+# Executables and converted m3u file directory
 *.exe
 *.out
 *.app
+m3uconverter
+converted/
