@@ -43,9 +43,7 @@ bool fgetline ( FILE *file, string &line )
 
         if ( c == '\r' )
         {
-            if ( fread ( &c, 1, 1, file ) != 1 )
-                return false;
-            if ( c != '\n' )
+            if ( fread ( &c, 1, 1, file ) == 1 && c != '\n' )
                 fseek ( file, -1, SEEK_CUR );
             return true;
         }
